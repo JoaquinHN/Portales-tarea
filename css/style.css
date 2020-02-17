@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  box-shadow: 1px 1px 5px white;
+}
+.site-header {
+  background-color: black ;
+}
+.site-header img{
+  padding: 0em 1.25em;
+  max-width: 50%;
+  width: 30%;
+  align-items: center;
+}
+
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+.container img {
+  max-width: 20%;
+  float: center;
+  height: 10em;  
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-content {
+  margin-top: 2.5em;
+  padding: 0;
+}
+.main-nav {
+  padding: 1.25em 0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Media query */
+@media (min-width: 768px) {
+  .main-content {
+    width: 70%;
+    float: left;
+    padding: 0 3.75em 0 0;
+  }
+  .sidebar {
+    width: 30%;
+    float: right;
+    padding: 0;
+    margin-top: 2.5em;
+  }
+}
+.entry img {
+  display: block;
+}
+.entry p{
+  text-align: justify;
+}
+.buttom {
+  background-color: #a7e9af;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.625em 3.75em;
+  margin-top: 0.625em;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+.buttom:hover {
+  background-color: #6a8caf;
+}
+/* Colocar la imagen a la izquierda */
+@media (min-width: 768px) {
+  .entry img {
+    width: 18.75em;
+    float: left;
+    margin: 0 1.25em 0 0;
+  }
+}
+/* Acceder a los hijos de un elemento HTML */
+.main-nav a:hover {
+  background-color: #75b79e;
+}
+.bar {
+  background-color: #a7e9af;
+  overflow: hidden;
+}
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.375em;
+  padding: 1.25em;
+  text-align: center;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .main-nav a {
+    display: inline;
+  }
+}
+/* Footer */
+.footer-site {
+  padding: 1.25em 0;
+  background-color: #6a8caf;
+  margin-top: 3.75em;
+  padding-top: 2.5em;
+  text-align: center;
+  float: center;
+}
+.footer-site h2 {
+  color: #ffffff;
+}
+.footer-site a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25em;
+  margin-right: 1.25em;
+}
+.footer-site a:last-of-type {
+  margin-right: 0;
+}
+.footer-site p {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .footer-site .about-us {
+    margin-left: 32.5% ;
+    float: center;
+    width: 35%;
+    text-align: center;
+  } 
+.copyright {
+  background-color: #6a8caf;
+  padding: 1.25em 0;
+}
+
+/*  Sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 0.625em;
+}
+.sidebar ul li:hover {
+  background-color: #a7e9af;
+}
+.sidebar ul li a {
+  color: #0083a4;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
+}
